@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 
-const Tour = () => {
-  return <h2>single tour component</h2>;
+const Tour = ({ id, image, info, price, name }) => {
+  return (
+    <article className="single-tour">
+      <img src={image} alt={name} />
+    </article>
+  );
 };
 
 export default Tour;
