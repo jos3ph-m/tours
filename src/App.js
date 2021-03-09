@@ -14,6 +14,9 @@ function App() {
     const response = await fetch(url);
     const tours = await response.json();
   };
+  useEffect(() => {
+    fetchTours();
+  }, []);
 
   if (loading) {
     return (
